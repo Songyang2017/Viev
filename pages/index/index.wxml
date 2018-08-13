@@ -1,8 +1,13 @@
 <view class="weather"> 
   <view class='top-box'>
     <view class='top-mask'></view>
-    <view class="title-city">{{weatherData.currentCity}}</view>  
-    <text class="title-city">{{weatherData.date}}</text>	
+    <view class="title-city">
+      <view>{{weatherData.currentCity}}</view>
+      <view>{{weatherData.date}}</view>
+      <view>{{weatherData.wind}}</view>
+      <view>{{weatherData.temperature}}</view>
+      <view>{{weatherData.weatherDesc}}</view>
+    </view>	
   </view>
 
 </view>

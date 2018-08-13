@@ -1,11 +1,13 @@
 .top-box{
   padding: 20rpx 25rpx;
-  width: 100%;
   height: 550rpx;
-  background: url(//wx4.sinaimg.cn/large/9b8e43a1ly1fu6kdnmp6zj20xc0kbdlk.jpg) no-repeat 0 0;
+  background: url(//wx2.sinaimg.cn/large/9b8e43a1ly1fu482221ccj20k00dzab6.jpg) no-repeat 0 0;
   background-size: cover;
   position: relative;
   z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .top-mask{
   position: absolute;
@@ -19,5 +21,10 @@
 
 .title-city{
   color:rgba(255,255,255,.95);
-  font-size: 40rpx;
+  font-size: 32rpx;
+}
+
+.title-city view{
+  text-align: center;
+  padding: 10px 0;
 }
