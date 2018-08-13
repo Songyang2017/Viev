@@ -1,0 +1,8 @@
+<view class="weather"> 
+  <view class='top-box'>
+    <view class='top-mask'></view>
+    <view class="title-city">{{weatherData.currentCity}}</view>  
+    <text class="title-city">{{weatherData.date}}</text>	
+  </view>
+
+</view>

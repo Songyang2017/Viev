@@ -1,0 +1,2 @@
+<view class="basic">{{title}}</view>
+<image mode="aspectFill"  src="https://wx4.sinaimg.cn/mw690/94d5a375gy1fo8wfuqla6j20go0go0td.jpg"></image>

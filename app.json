@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/view/view"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fa6",
+    "navigationBarTitleText": "Viev",
+    "navigationBarTextStyle":"#fff"
+  }
+}
