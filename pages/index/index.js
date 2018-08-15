@@ -14,11 +14,13 @@ Page({
       console.log(data)
     };
     var success = function (data) {
-      console.log(data)
       var weatherData = data.currentWeather[0];
+      var detailData = data.originalData.results[0].weather_data;
+      console.log(data)
       // weatherData = '城市：' + weatherData.currentCity + '\n' + 'PM2.5：' + weatherData.pm25 + '\n' + '日期：' + weatherData.date + '\n' + '温度：' + weatherData.temperature + '\n' + '天气：' + weatherData.weatherDesc + '\n' + '风力：' + weatherData.wind + '\n';
       that.setData({
-        weatherData: weatherData
+        weatherData: weatherData,
+        detailData: detailData
       });
     }
     // 发起weather请求 

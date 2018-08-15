@@ -305,7 +305,6 @@ class BMapWX {
         let type = 'gcj02';
         let locationsuccess = function (result) {
             weatherparam["location"] = result["longitude"] + ',' + result["latitude"];
-            console.log('weatherparam',weatherparam);
             wx.request({
                 url: 'https://api.map.baidu.com/telematics/v3/weather',
                 data: weatherparam,

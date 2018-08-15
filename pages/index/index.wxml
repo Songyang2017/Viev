@@ -9,5 +9,14 @@
       <view>{{weatherData.weatherDesc}}</view>
     </view>	
   </view>
-
+  <view class="middle-box">
+     <view class='middle-list' wx:for="{{detailData}}" wx:key="*this">
+        <view class="v-l-t">{{item.date}}</view>
+        <view class="v-m-t">
+          <image src="{{item.dayPictureUrl}}"></image>
+          <text>{{item.weather}}</text>
+        </view>
+        <view class="v-r-t">{{item.temperature}}</view>
+     </view> 
+  </view>
 </view>
