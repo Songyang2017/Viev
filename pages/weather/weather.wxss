@@ -1,0 +1,66 @@
+page{
+  width: 100%;
+  height:100%; 
+}
+.top-box{
+  padding: 20rpx 25rpx;
+  background: url(//wx2.sinaimg.cn/large/9b8e43a1ly1fu482221ccj20k00dzab6.jpg) no-repeat 0 0;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-mask{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%; 
+  background-color: rgba(0,0,0,.2);
+  z-index: 2;
+}
+
+.title-city{
+  color:rgba(255,255,255,.95);
+  font-size: 32rpx;
+  z-index: 5
+}
+
+.title-city view{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.middle-box{
+  color:#999;
+  font-size: 32rpx;
+}
+
+.middle-list{
+  border-bottom: 1px solid #efefef;
+  padding:15px 0;
+  margin: 0 16px;
+  display: flex;
+}
+.middle-list image{
+  width: 40rpx;
+  height: 35rpx;
+  margin-right:5rpx;  
+}
+.middle-list view{
+  flex:1;
+  display: flex;
+  align-items: center;
+  
+}
+.v-m-t{
+  padding-left: 40rpx;
+}
+.v-l-t{
+  justify-content: flex-start;
+}
+.v-r-t{
+  justify-content: flex-end;
+}

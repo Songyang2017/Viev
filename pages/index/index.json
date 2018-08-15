@@ -1,11 +1,5 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/view/view",
-    "pages/weather/weather",
-    "pages/api/api"
-  ],
+  "pages":[],
   "window":{
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#495a80",
