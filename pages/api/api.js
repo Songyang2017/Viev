@@ -6,7 +6,7 @@ Page({
     
   }, 
   onReady: function (e) {
-    
+    this.audioCtx = wx.createAudioContext('myAudio');
     
   },
   audioPlay: function () {
@@ -15,11 +15,8 @@ Page({
   bindFormSubmit: function (e) {
     var val = e.detail.value.textarea;
     this.loadAudo(val)
-  },
-  loadAudo:function(v){
     var _this = this;
-    console.log(v)
-     wx.request({
+    wx.request({
       url: 'https://openapi.baidu.com/oauth/2.0/token',
       data: {
         grant_type: 'client_credentials',
@@ -32,18 +29,25 @@ Page({
       success: function (res) {
         var access_token = res.data.access_token;
         console.log('token', access_token)
-        var url = 'http://tsn.baidu.com/text2audio?lan=zh&ctp=1&cuid=abcdxxx&tok=' + access_token + '&tex=' + v + '&vol=9&per=0&spd=5&pit=5&aue=3'
+        var url = 'http://tsn.baidu.com/text2audio?lan=zh&ctp=1&cuid=abcdxxx&tok=' + access_token + '&tex=' + val + '&vol=9&per=0&spd=5&pit=5&aue=3'
         console.log(res)
         _this.setData({
           url: url
         })
-      },
-      success: function () {
+        console.log('url',url)
         // 使用 wx.createAudioContext 获取 audio 上下文 context
-        _this.audioCtx = wx.createAudioContext('myAudio');
-        _this.audioCtx.play();
-      }
+        console.log('success', val)
+        setTimeout(function () {
+          _this.audioCtx.play();
+        }, 0)
+      },
+      // success: function () {
+        
+      // }
     })
+  },
+  loadAudo:function(){
+    
     
   }
   
