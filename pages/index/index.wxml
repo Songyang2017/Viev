@@ -1,4 +1,5 @@
 <view class="btn-box">
   <button bindtap="weather">天气</button>
-  <button bindtap="apiSetting">API调试</button>
+  <button bindtap="apiSetting">语音</button>
+  <button bindtap="video">视频</button>
 </view>

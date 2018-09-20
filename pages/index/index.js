@@ -9,7 +9,12 @@ Page({
   },
   apiSetting:function(){
     wx.navigateTo({
-      url: '../api/api',
+      url: '../api/api'
+    })
+  },
+  video:function(){
+    wx.navigateTo({
+      url: '../video/video'
     })
   }
 })

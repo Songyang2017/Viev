@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/view/view",
     "pages/weather/weather",
-    "pages/api/api"
+    "pages/api/api",
+    "pages/video/video"
   ],
   "window":{
     "backgroundTextStyle": "light",

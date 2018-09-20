@@ -1,4 +1,3 @@
-<text>复仇者联盟</text>
 <audio id="myAudio" src="{{url}}" controls></audio>
 <form bindsubmit="bindFormSubmit">
   <textarea id='textValue' name="textarea"></textarea>
