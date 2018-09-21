@@ -2,4 +2,5 @@
   <button bindtap="weather">天气</button>
   <button bindtap="apiSetting">语音</button>
   <button bindtap="video">视频</button>
+  <button bindtap="gotoMus">下载歌曲</button>
 </view>

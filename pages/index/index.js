@@ -16,5 +16,10 @@ Page({
     wx.navigateTo({
       url: '../video/video'
     })
+  },
+  gotoMus:function(){
+    wx.navigateTo({
+      url: '../downLoad/dIndex'
+    })
   }
 })

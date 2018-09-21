@@ -5,7 +5,8 @@
     "pages/view/view",
     "pages/weather/weather",
     "pages/api/api",
-    "pages/video/video"
+    "pages/video/video",
+    "pages/downLoad/dIndex"
   ],
   "window":{
     "backgroundTextStyle": "light",

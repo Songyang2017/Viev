@@ -1,4 +1,5 @@
 <video src="{{videoSrc}}" class="_video"></video>
 <button bindtap="userList">添加联系人</button>
 <button bindtap="ScanQr">扫码</button>
+<button bindtap="pay">支付</button>
 <view>{{res.result}}</view>

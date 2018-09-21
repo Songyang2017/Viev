@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    videoSrc: 'https://partybuild-jsk.oss-cn-hangzhou.aliyuncs.com/ELLV1549.mp4'
+    
   },
 
   /**
@@ -18,30 +18,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    
+  },
 
-  },
-  userList: function () {
-    wx.addPhoneContact({
-      fileName: '锦毛鼠',
-      nickName: '锦毛鼠',
-      mobilePhoneNumber:'13453235465',
-      photoFilePath: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537420040891&di=739a45d6c09068a1ac02a6d2a11316c3&imgtype=0&src=http%3A%2F%2Fs2.sinaimg.cn%2Fmw690%2F003zeDt1zy72R1iPIl371'
-    })
-  },
-  ScanQr:function(){
-    var _this = this;
-    wx.scanCode({
-      success:function(res){
-        _this.setData({
-          "res": res
-        })
-        console.log("result", result)
-      }
-    })
-  },
-  pay:function(){
-
-  },
   /**
    * 生命周期函数--监听页面显示
    */
