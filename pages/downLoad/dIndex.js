@@ -18,7 +18,34 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    wx.request({
+      url: 'http://120.77.213.195/api/search',
+      data:{
+        g_tk: 1928093487,
+        inCharset: 'utf-8',
+        outCharset: 'utf-8',
+        notice: 0,
+        format: 'jsonp',
+        w: '周杰伦',
+        p: 1,
+        catZhida: 1,
+        perpage: 20,
+        n: 20,
+        zhidaqu: 1,
+        t: 0,
+        flag: 1,
+        ie: 'utf-8',
+        sem: 1,
+        aggr: 0,
+        remoteplace: 'txt.mqq.all',
+        uid: 0,
+        plateform: 'h5',
+        needNewCode: 1
+      },
+      success:function(res){
+        console.log(res)
+      }
+    })
   },
 
   /**
