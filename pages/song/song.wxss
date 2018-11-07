@@ -1,0 +1,34 @@
+/* pages/song/song.wxss */
+page{
+  height:100%;
+  background-color: rgb(252, 252, 252);
+  box-sizing: content-box
+}
+.title-p{
+  width:100%;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 30rpx 0;
+}
+.inp{
+  width:80%;
+  margin: 0 auto 35rpx;
+  padding: 15rpx 30rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
+  border-radius: 40rpx;
+}
+
+.go{
+  text-align: center;
+  margin:auto;
+  line-height: 120rpx;
+  width:120rpx;
+  height:120rpx;
+  border-radius: 50%;
+  font-size: 30rpx;
+  background: #c9baf6;
+  box-shadow: 0 0 4px 0 #c9baf6;
+  color:#fff
+}

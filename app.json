@@ -1,16 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/view/view",
     "pages/weather/weather",
     "pages/api/api",
-    "pages/video/video",
-    "pages/downLoad/dIndex"
+    "pages/song/song"
   ],
-  "window":{
+  "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#20262e",
-    "navigationBarTitleText": "Viev"
+    "navigationBarTitleText": "wv"
   }
 }

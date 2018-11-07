@@ -12,14 +12,9 @@ Page({
       url: '../api/api'
     })
   },
-  video:function(){
+  gotoMus: function(){
     wx.navigateTo({
-      url: '../video/video'
-    })
-  },
-  gotoMus:function(){
-    wx.navigateTo({
-      url: '../downLoad/dIndex'
+      url: '../song/song'
     })
   }
 })

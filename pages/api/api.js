@@ -7,7 +7,6 @@ Page({
   }, 
   onReady: function (e) {
     this.audioCtx = wx.createAudioContext('myAudio');
-    
   },
   audioPlay: function () {
     

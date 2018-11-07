@@ -1,0 +1,16 @@
+<!--pages/song/song.wxml-->
+<view class='title-p'>随心而动</view>
+<input class='inp' type='search' placeholder='关键词' bindinput='inputVal' value='{{query}}'></input>
+<view class='go' bindtap='getData'>Go</view>
+
+<view wx:if='{{list.length}}'>
+  <view wx:for='{{list}}'>
+    <!-- <audio id='{{item.song_id}}' 
+    controls='true' 
+    src='{{item.listen_file}}'
+    poster='{{item.album_logo}}'
+    name='{{item.song_name}}' 
+    author='{{item.artist_name}}'></audio> -->
+    <view bindtap='down' data-item="{{item}}">{{item.song_name}}</view>
+  </view>  
+</view>
